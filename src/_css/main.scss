@@ -40,6 +40,7 @@ $tile-spacing: $grid-gutter / 2;
 
 .target-bar {
   border: 1px solid $green-mid;
+  margin-top: $grid-gutter;
   width: 100%;
 }
 
@@ -50,10 +51,34 @@ $tile-spacing: $grid-gutter / 2;
 
 .donate-tile-onward.donate-tile-onward {
   border-top: 1px solid $coop-border-grey;
-  margin-bottom: -#{$tile-spacing/2};
+  margin-bottom: -#{$tile-spacing / 2};
   margin-left: -#{$tile-spacing};
   margin-right: -#{$tile-spacing};
   margin-top: $tile-spacing;
   padding: $tile-spacing;
+}
 
+.target-indicator {
+  display: grid;
+  padding: $grid-gutter 0;
+}
+
+.target-indicator-title {
+  grid-column: 1;
+  grid-row: 1;
+
+  &:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+.target-indicator-amount {
+  grid-column: 1;
+  grid-row: 2;
+
+  &:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
