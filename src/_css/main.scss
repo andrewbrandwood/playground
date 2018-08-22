@@ -14,6 +14,7 @@ $base-asset-url: '/assets/';
 //custom styles.
 
 $input-margin: $grid-gutter / 2;
+$tile-spacing: $grid-gutter / 2;
 
 .form-group {
   display: flex;
@@ -45,4 +46,14 @@ $input-margin: $grid-gutter / 2;
 .target-bar-indicator {
   display: block;
   height: 40px;
+}
+
+.donate-tile-onward.donate-tile-onward {
+  border-top: 1px solid $coop-border-grey;
+  margin-bottom: -#{$tile-spacing/2};
+  margin-left: -#{$tile-spacing};
+  margin-right: -#{$tile-spacing};
+  margin-top: $tile-spacing;
+  padding: $tile-spacing;
+
 }
