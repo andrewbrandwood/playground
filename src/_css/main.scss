@@ -56,7 +56,7 @@ $tile-spacing: $grid-gutter / 2;
 
 .donate-tile-onward.donate-tile-onward {
   border-top: 1px solid $coop-border-grey;
-  margin-bottom: -#{$tile-spacing / 2};
+  margin-bottom: -#{$tile-spacing};
   margin-left: -#{$tile-spacing};
   margin-right: -#{$tile-spacing};
   margin-top: $tile-spacing;
