@@ -4,7 +4,7 @@ id: index
 ---
 <div class="wrap">
     <div class="row">
-        <div class="tile tile--grey">
+        <article class="tile tile--grey tile--shadow">
           <h2>Help refugees rebuild their lives and communities in Manchester</h2>
           <h3>Manchester Refugee Support</h3>
           <form action="summary.html" method="post">
@@ -18,11 +18,21 @@ id: index
               </dl>
               <div class="form-row">
                 <label for="ActionInput">Donate to this project</label>
-                <input type="text" id="ActionInput" name="ActionInput" />
-                <button type="button" class="btn">Donate</button>
+                <div class="form-group">
+                  <div class="form-group-item">
+                    <span class="input-addon input-suffix">&pound;</span>
+                    <input type="text" id="ActionInput" name="ActionInput" required class="donate-tile-input input-prefix" pattern="\d+" />
+                  </div>
+                  <div class="form-group-item">
+                    <button type="submit" class="btn">Donate</button>
+                  </div>
+                </div>
               </div>
             </fieldset>
           </form>
-        </div>
+          <div class="donate-tile__onward">
+            <a href="#" class="donate-tile__onward-link">Learn more about causes local to you</a>
+          </div>
+        </article>
     </div>
 </div>

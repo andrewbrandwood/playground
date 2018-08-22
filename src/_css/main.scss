@@ -1,9 +1,43 @@
 $base-asset-url: '/assets/';
 
+//theme overrides
+$button-grey: #273976;
+$button-grey-highlighted: darken($button-grey, 10%);
+
 @import 'coop-toolkit';
+@import 'components/tiles';
+@import 'forms';
 
 // Temp fix to get the kit homepage looking better
 .header-main .coop-logo {
   margin-left: 0;
   padding: 10px 10px 10px 0;
+}
+
+// donate block
+
+//custom styles.
+
+$input-margin: $grid-gutter / 2;
+
+.form-group {
+  display: flex;
+}
+
+.form-group-item {
+  display: inline-flex;
+  flex-wrap: nowrap;
+
+  &:first-child {
+    margin-right: $input-margin;
+    width: 100%;
+  }
+}
+
+.donate-tile-input.donate-tile-input {
+  width: calc(100% - #{$input-margin});
+}
+
+.input-addon {
+  @include form-field;
 }
