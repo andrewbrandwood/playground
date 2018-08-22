@@ -18,8 +18,10 @@
     "jshint-stylish": "^2.1.0",
     "node-sass": "^4.9.0"
   },
-  "devDependencies": {},
   "scripts": {
     "postinstall": "gulp build"
+  },
+  "devDependencies": {
+    "chai-http": "^4.0.0"
   }
 }

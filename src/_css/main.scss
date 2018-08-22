@@ -1,12 +1,7 @@
 $base-asset-url: '/assets/';
 
-//theme overrides
-$button-grey: #273976;
-$button-grey-highlighted: darken($button-grey, 10%);
-
 @import 'coop-toolkit';
 @import 'components/tiles';
-@import 'forms';
 
 // Temp fix to get the kit homepage looking better
 .header-main .coop-logo {
@@ -40,4 +35,14 @@ $input-margin: $grid-gutter / 2;
 
 .input-addon {
   @include form-field;
+}
+
+.target-bar {
+  border: 1px solid $green-mid;
+  width: 100%;
+}
+
+.target-bar-indicator {
+  display: block;
+  height: 40px;
 }

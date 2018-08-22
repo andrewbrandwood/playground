@@ -118,7 +118,7 @@ gulp.task('assets', function() {
  * Tests
  */
 gulp.task('testjs', function() {
-  gulp.src('test.js')
+  gulp.src('spec/**/*.js')
     .pipe(mocha());
 });
 
