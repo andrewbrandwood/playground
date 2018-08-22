@@ -31,11 +31,14 @@ $tile-spacing: $grid-gutter / 2;
 }
 
 .donate-tile-input.donate-tile-input {
+  appearance: none;
+  border-radius: 0;
   width: calc(100% - #{$input-margin});
 }
 
 .input-addon {
   @include form-field;
+  line-height: 1.9;
 }
 
 .target-bar {
@@ -47,6 +50,8 @@ $tile-spacing: $grid-gutter / 2;
 .target-bar-indicator {
   display: block;
   height: 40px;
+  transition: width 1s ease-out;
+  width: 0;
 }
 
 .donate-tile-onward.donate-tile-onward {
@@ -60,8 +65,19 @@ $tile-spacing: $grid-gutter / 2;
 
 .target-indicator {
   display: grid;
-  padding: $grid-gutter 0;
   margin-bottom: 0;
+  padding: $grid-gutter 0;
+
+  .js & {
+    opacity: 0;
+
+    &.show {
+      opacity: 1;
+      transition: opacity 1s ease-out;
+    }
+  }
+
+
 }
 
 .target-indicator-title {

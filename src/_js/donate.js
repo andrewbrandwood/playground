@@ -33,6 +33,11 @@
 
     };
 
+    donationTargetState.prototype.showElement = function(){
+      var indicator = document.querySelector('[data-target-indicator]');
+      indicator.classList.add('show');
+    };
+
     donationTargetState.prototype.setValues = function(values){
       var runningTotal = document.querySelector('[data-donation-running-total]');
       var target = document.querySelector('[data-donation-target]');
@@ -47,6 +52,7 @@
       this.getValues()
       .then(function(response){
         self.setValues(response);
+        self.showElement();
       }, function(error){
         console.error('error', error);
       });
