@@ -61,6 +61,14 @@ $tile-spacing: $grid-gutter / 2;
   margin-right: -#{$tile-spacing};
   margin-top: $tile-spacing;
   padding: $tile-spacing;
+
+  @include media(large) {
+    margin-bottom: -#{$grid-gutter};
+    margin-left: -#{$grid-gutter};
+    margin-right: -#{$grid-gutter};
+    margin-top: $grid-gutter;
+    padding: $grid-gutter;
+  }
 }
 
 .target-indicator {
